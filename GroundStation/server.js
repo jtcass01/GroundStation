@@ -1,8 +1,26 @@
-'use strict';
-var http = require('http');
-var port = process.env.PORT || 1337;
+'user strict';
 
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
+const express = require('express');
+const http = require('http');
+var path = require('path');
+
+
+const port = process.env.PORT || 8080;
+const app = express();
+
+console.log(__dirname + 'views');
+
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'views'));
+
+app.get('/', (request, response) => {
+    response.render('index', { title: 'RCR Ground Station' });
+});
+
+app.listen(port, (error) => {
+    if (error) {
+        return console.log('something bad happened', error);
+    }
+
+    console.log('server is listening on ' + port);
+});

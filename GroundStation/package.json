@@ -4,6 +4,10 @@
   "description": "GroundStation",
   "main": "server.js",
   "author": {
-    "name": "JakeT"
+    "name": "Jacob Cassady"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.3"
   }
 }
