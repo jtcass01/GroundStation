@@ -1,0 +1,9 @@
+{
+  "name": "ground-station",
+  "version": "0.0.0",
+  "description": "GroundStation",
+  "main": "server.js",
+  "author": {
+    "name": "JakeT"
+  }
+}
