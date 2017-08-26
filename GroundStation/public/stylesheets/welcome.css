@@ -1,13 +1,8 @@
 ﻿.logo {
-    top: 50%;
-    left: 50%;
-    background-color: black;
+    margin:0 auto;
 }
 
 .user-login {
-    top: 50%;
-    left: 50%;
-    background-color: black;
 }
 
 .row {
@@ -22,13 +17,13 @@ form {
 
 .form-group {
     text-align: center;
-    top: 50%;
-    left: 50%;
+    margin: 10px auto;
+    display: block;
 }
 
 body {
     background-color: black;
-    padding: 15%;
+    padding: 1%;
 }
 
 input[type=text] {
@@ -41,4 +36,9 @@ input[type=password] {
 
 label{
     color: #B01C1C;
+}
+
+#login-container {
+    width: 500px;
+    height: 300px;
 }

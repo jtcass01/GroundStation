@@ -31,6 +31,9 @@
     <Compile Include="app.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\index.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="package.json" />
     <Content Include="public\images\rcr-logo-dark.png" />
     <Content Include="public\images\rcr-logo.png" />
@@ -51,6 +54,7 @@
   <ItemGroup>
     <Folder Include="logs\" />
     <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
     <Folder Include="views\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
