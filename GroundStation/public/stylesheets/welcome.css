@@ -1,0 +1,44 @@
+﻿.logo {
+    top: 50%;
+    left: 50%;
+    background-color: black;
+}
+
+.user-login {
+    top: 50%;
+    left: 50%;
+    background-color: black;
+}
+
+.row {
+    background-color: black;
+    margin-top: 5%;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+body {
+    background-color: black;
+    padding: 15%;
+}
+
+input[type=text] {
+    background-color: black;
+}
+
+input[type=password] {
+    background-color: black;
+}
+
+label{
+    color: #B01C1C;
+}

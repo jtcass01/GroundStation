@@ -1,0 +1,28 @@
+﻿extends layout
+
+block header
+    doctype html
+    html
+        head
+            title= title
+            link(rel='stylesheet', href='stylesheets/main.css', type='text/css')
+            link(rel='stylesheet', href='stylesheets/welcome.css', type='text/css')
+            link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css", integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M", crossorigin="anonymous")
+        body
+
+block logo
+    .logo.container-fluid
+        .row.mx-auto
+            img(src="images/rcr-logo-dark.png", alt = "RCR Logo", style="width:100%;height:100%;")
+
+block user-login
+    .user-login.container-fluid
+        .row.mx-auto
+            form(method='POST', action='/login', style="display:inline-block;text-align:center;").mx-auto
+                div.form-group
+                    label(for='username') username:
+                    input#username.form-control(type='text', placeholder='rcr', name='username')
+                div.form-group
+                    label(for='password') password:
+                    input#password.form-control(type='password', name=password)
+                button.btn.btn-primary(type='submit', style="background-color:#B01C1C;border-color:#B01C1C;") Login

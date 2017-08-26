@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9dfd89bf-26b2-43e2-9484-95214770fe07</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,20 +28,34 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="server.js" />
+    <Compile Include="app.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="package.json" />
-    <Content Include="public\images\rcrLogo.png" />
+    <Content Include="public\images\rcr-logo-dark.png" />
+    <Content Include="public\images\rcr-logo.png" />
+    <Content Include="public\stylesheets\main.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\stylesheets\welcome.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="README.md" />
-    <Content Include="views\index.pug">
+    <Content Include="views\welcome\index.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\welcome\layout.pug">
       <SubType>Code</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="logs\" />
+    <Folder Include="public\stylesheets\" />
     <Folder Include="views\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
+    <Folder Include="views\welcome\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
